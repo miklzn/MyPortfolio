@@ -16,30 +16,61 @@
   <body>
     <!--Header-->
 
-    <header>
+    <header class="header" role="banner" id="top">
       <div class="row">
-        <nav>
-          <a href="">Work</a>
-          <a href="">Client</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
+        <nav class="nav" role="navigation">
+          <ul class="nav_items">
+            <li class="nav_item">
+              <a href="#work" class="nav_link">Proyectos</a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">Skills</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">Sobre mi</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">Contacto</a>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="row header-text-container">
         <div class="header-text">
           <h1>Mikelzon Sarabia</h1>
           <p>Full Stack Developer</p>
-          <a href="" class="btn">Get in touch</a>
+          <a href="" class="btn">Contactar</a>
         </div>
       </div>
     </header>
 
     <!--My Work-->
 
-    <section>
+    <section id="work">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>Proyectos</h2>
         <div class="work-box">
+          <div class="work-box-text">
+            <h3>House of Dev</h3>
+            <p>App web de una inmobiliaria</p>
+            <ul>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Redux</li>
+            </ul>
+            <div class="work-box-links">
+              <!-- <a href="" class="btn-text">Visitar &nbsp;&rarr;</a> -->
+              <a href="https://github.com/miklzn/HouseOfDev" class="gh-link">
+                <img src="images/github.png" alt="GitHub" class="gh-icon" />
+              </a>
+            </div>
+          </div>
+          <div class="work-box-image">
+            <img src="images/HouseofDev.png" alt="House of Dev" />
+          </div>
+        </div>
+        <!-- <div class="work-box">
           <div class="work-box-text">
             <h3>Nombre Proyecto 1</h3>
             <p>Pequena descripcion del proyecto</p>
@@ -59,34 +90,13 @@
           <div class="work-box-image">
             <img src="images/proyecto1.jpg" alt="Nombre proyecto 1" />
           </div>
-        </div>
-        <div class="work-box">
-          <div class="work-box-text">
-            <h3>Nombre Proyecto 1</h3>
-            <p>Pequena descripcion del proyecto</p>
-            <ul>
-              <li>Tecnologia 1</li>
-              <li>Tecnologia 2</li>
-              <li>Tecnologia 3</li>
-              <li>Tecnologia 4</li>
-            </ul>
-            <div class="work-box-links">
-              <a href="" class="btn-text">Visitar &nbsp;&rarr;</a>
-              <a href="" class="gh-link">
-                <img src="images/github.png" alt="GitHub" class="gh-icon" />
-              </a>
-            </div>
-          </div>
-          <div class="work-box-image">
-            <img src="images/proyecto1.jpg" alt="Nombre proyecto 1" />
-          </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!--Skills-->
 
-    <section>
+    <section id="skills">
       <div class="row">
         <h2>Skills</h2>
         <div class="skills">
@@ -104,21 +114,21 @@
 
     <!--About Me-->
 
-    <section>
+    <section id="about">
       <div class="row">
-        <h2>About Me</h2>
+        <h2>Sobre Mi</h2>
         <div class="about">
           <div class="about-image">
             <img src="images/proyecto2.jpg" alt="Mikelzon Sarabia" />
           </div>
           <div class="about-text">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-              corporis, iste soluta beatae est ipsa illo necessitatibus quisquam
-              ut, molestiae repudiandae dolore sed quia! Illo praesentium,
-              nobis, quisquam velit.
+              En el 2022 realice un bootcamp de programación de más de 800 hs en
+              las que, con proyectos como e-commerce, proyecto integrador y
+              otras prácticas, adquiri las habilidades técnicas y blandas para
+              desarrollarme en esta industria.
             </p>
-            <a href="" class="btn">My Resume</a>
+            <a href="" class="btn">Descargar CV</a>
           </div>
         </div>
       </div>
@@ -126,17 +136,17 @@
 
     <!--Get in Touch-->
 
-    <section>
+    <section id="contact">
       <div class="row">
         <div class="contact">
-          <h2>Get in Touch</h2>
+          <h2>Contacto</h2>
           <p>
-            Are you looking for a fast-performing and user-friendly website to
-            represent your product or business? or looking for any kind of
-            consultation? or want to ask question? or have some advice for me or
-            just want to say "Hi 👋" in any case feel free to let me know. I
-            will do my best to respond back . 😊 The quickest way to reach out
-            to me is via an email.
+            ¿Está buscando un sitio web de rápido rendimiento y fácil de usar
+            para representar su producto o negocio? ¿o quiere hacer alguna
+            pregunta? o tiene algún consejo para mí o simplemente quiere decir
+            "Hola 👋" en cualquier caso, no dude en hacérmelo saber. Haré todo
+            para responder lo más pronto posible 😊. La forma más rápida de
+            llegar a mí es a través de un correo electrónico.
           </p>
           <a href="mailto:mikelzonsarabia@gmail.com" class="btn"
             >mikelzonsarabia@gmail.com</a
@@ -163,5 +173,13 @@
         <p>&copy; 2023 - Creado por Mikelzon Sarabia</p>
       </div>
     </footer>
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top_image"
+      />
+    </a>
+    <script src="./main.js"></script>
   </body>
 </html>
