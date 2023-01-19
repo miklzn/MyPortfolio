@@ -2,144 +2,184 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
     <title>Portfolio | Miklzn</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat&display=swap"
-      rel="stylesheet"
+
+    <meta name="description" content="Add small description of yourslef." />
+    <meta
+      name="keywords"
+      content="Put your name, skills and some coding keywords"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!--Header-->
+    <!-------- Header --------->
 
     <header class="header" role="banner" id="top">
       <div class="row">
         <nav class="nav" role="navigation">
-          <ul class="nav_items">
-            <li class="nav_item">
-              <a href="#work" class="nav_link">Proyectos</a>
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Proyectos</a>
             </li>
-            <li class="nav_item">
-              <a href="#skills" class="nav_link">Skills</a>
+            <li class="nav__item">
+              <a href="#clients" class="nav__link">Skills</a>
             </li>
-            <li class="nav_item">
-              <a href="#about" class="nav_link">Sobre mi</a>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Sobre Mi</a>
             </li>
-            <li class="nav_item">
-              <a href="#contact" class="nav_link">Contacto</a>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contacto</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="row header-text-container">
-        <div class="header-text">
-          <h1>Mikelzon Sarabia</h1>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <span>Mikelzon Sarabia</span>
+          </h1>
           <p>Full Stack Developer</p>
-          <a href="" class="btn">Contactar</a>
+          <a href="#contact" class="btn btn--pink">Contactar</a>
         </div>
       </div>
     </header>
 
-    <!--My Work-->
+    <main role="main">
+      <!----------Work---------->
 
-    <section id="work">
-      <div class="row">
-        <h2>Proyectos</h2>
-        <div class="work-box">
-          <div class="work-box-text">
-            <h3>House of Dev</h3>
-            <p>App web de una inmobiliaria</p>
-            <ul>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>Redux</li>
-            </ul>
-            <div class="work-box-links">
-              <!-- <a href="" class="btn-text">Visitar &nbsp;&rarr;</a> -->
-              <a href="https://github.com/miklzn/HouseOfDev" class="gh-link">
-                <img src="images/github.png" alt="GitHub" class="gh-icon" />
-              </a>
+      <section class="work" id="work">
+        <div class="row">
+          <h2>Proyectos</h2>
+          <div class="work__boxes">
+            <div class="work__box">
+              <div class="work__text">
+                <h3>House of Dev</h3>
+                <p>App web de una inmobiliaria.</p>
+                <ul class="work__list">
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>Redux</li>
+                </ul>
+                <div class="work__links">
+                  <!-- <a href="" target="_blank" class="link__text">
+                  Visitar Sitio<span>&rarr;</span>
+                </a> -->
+                  <a
+                    href="https://github.com/miklzn/HouseOfDev"
+                    title="HOD-Github"
+                    target="_blank"
+                  >
+                    <img
+                      src="images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/HouseofDev.png"
+                  class="work__image"
+                  alt="HouseOfDev"
+                />
+              </div>
+            </div>
+
+            <!-- <div class="work__box">
+            <div class="work__text">
+              <h3>House of Dev</h3>
+              <p>
+                App web de una inmobiliaria.
+              </p>
+              <ul class="work__list">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Redux</li>
+              </ul>
+              <div class="work__links">
+                <a href="" target="_blank" class="link__text">
+                  Visitar Sitio<span>&rarr;</span>
+                </a>
+                <a href="https://github.com/miklzn/HouseOfDev" title="HOD-Github" target="_blank">
+                  <img src="images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/HouseofDev.png" class="work__image" alt="HouseOfDev" />
+            </div>
+          </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!----------Skills---------->
+
+      <section class="client" id="clients">
+        <div class="row">
+          <h2>Skills</h2>
+          <div class="client__logos">
+            <img src="./images/html.png" class="client__logo" alt="HTML" />
+            <img src="./images/css3.png" class="client__logo" alt="CSS" />
+            <img
+              src="./images/javascript.png"
+              class="client__logo"
+              alt="JavaScript"
+            />
+            <img src="./images/sass.png" class="client__logo" alt="Sass" />
+            <img src="./images/react.png" class="client__logo" alt="React" />
+            <img
+              src="./images/postgreesql.png"
+              class="client__logo"
+              alt="PostgreSQL"
+            />
+            <img
+              src="./images/node-js.png"
+              class="client__logo"
+              alt="Node.js"
+            />
+            <img src="./images/github.png" class="client__logo" alt="Github" />
+          </div>
+        </div>
+      </section>
+
+      <!----------About---------->
+
+      <section class="about" id="about">
+        <div class="row">
+          <h2>Sobre Mi</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <p>
+                En el 2022 realice un bootcamp de programación de más de 800 hs
+                en las que, con proyectos como e-commerce, proyecto integrador y
+                otras prácticas, adquiri las habilidades técnicas y blandas para
+                desarrollarme en esta industria.
+              </p>
+              <a href="CV/Mikelzon_Sarabia.pdf" class="btn">Descargar CV</a>
+            </div>
+
+            <div class="about__photo-container">
+              <img class="about__photo" src="./images/Foto.jpeg" alt="Me" />
             </div>
           </div>
-          <div class="work-box-image">
-            <img src="images/HouseofDev.png" alt="House of Dev" />
-          </div>
         </div>
-        <!-- <div class="work-box">
-          <div class="work-box-text">
-            <h3>Nombre Proyecto 1</h3>
-            <p>Pequena descripcion del proyecto</p>
-            <ul>
-              <li>Tecnologia 1</li>
-              <li>Tecnologia 2</li>
-              <li>Tecnologia 3</li>
-              <li>Tecnologia 4</li>
-            </ul>
-            <div class="work-box-links">
-              <a href="" class="btn-text">Visitar &nbsp;&rarr;</a>
-              <a href="" class="gh-link">
-                <img src="images/github.png" alt="GitHub" class="gh-icon" />
-              </a>
-            </div>
-          </div>
-          <div class="work-box-image">
-            <img src="images/proyecto1.jpg" alt="Nombre proyecto 1" />
-          </div>
-        </div> -->
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!--Skills-->
+    <!----------Contact---------->
 
-    <section id="skills">
+    <section class="contact" id="contact">
       <div class="row">
-        <h2>Skills</h2>
-        <div class="skills">
-          <img src="images/html.png" alt="HTML" />
-          <img src="images/css3.png" alt="CSS" />
-          <img src="images/javascript.png" alt="JavaScript" />
-          <img src="images/sass.png" alt="Sass" />
-          <img src="images/react.png" alt="React" />
-          <img src="images/postgreesql.png" alt="PostgreSQL" />
-          <img src="images/node-js.png" alt="Node-Js" />
-          <img src="images/github.png" alt="GitHub" />
-        </div>
-      </div>
-    </section>
-
-    <!--About Me-->
-
-    <section id="about">
-      <div class="row">
-        <h2>Sobre Mi</h2>
-        <div class="about">
-          <div class="about-image">
-            <img src="images/proyecto2.jpg" alt="Mikelzon Sarabia" />
-          </div>
-          <div class="about-text">
-            <p>
-              En el 2022 realice un bootcamp de programación de más de 800 hs en
-              las que, con proyectos como e-commerce, proyecto integrador y
-              otras prácticas, adquiri las habilidades técnicas y blandas para
-              desarrollarme en esta industria.
-            </p>
-            <a href="" class="btn">Descargar CV</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Get in Touch-->
-
-    <section id="contact">
-      <div class="row">
-        <div class="contact">
-          <h2>Contacto</h2>
+        <h2>Contacto</h2>
+        <div class="contact__info">
           <p>
             ¿Está buscando un sitio web de rápido rendimiento y fácil de usar
             para representar su producto o negocio? ¿o quiere hacer alguna
@@ -155,29 +195,63 @@
       </div>
     </section>
 
-    <!--Footer-->
+    <!----------Footer---------->
 
-    <footer>
+    <footer role="contentinfo" class="footer">
       <div class="row">
-        <div class="footer-social">
-          <a href="">
-            <img src="images/twitter.png" alt="Twitter" />
-          </a>
-          <a href="">
-            <img src="images/github.png" alt="GitHub" />
-          </a>
-          <a href="">
-            <img src="images/linkedin.png" alt="Linkedin" />
-          </a>
-        </div>
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a
+              href="https://twitter.com/miklzn/"
+              title="Link to Twitter Profile"
+            >
+              <img
+                src="./images/twitter.svg"
+                class="footer__social-image"
+                alt="Twitter"
+              />
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://github.com/miklzn/" title="Link to Github Profile">
+              <img
+                src="./images/github.svg"
+                class="footer__social-image"
+                alt="Github"
+              />
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/mikelzonsarabia/">
+              <img
+                src="./images/linkedin.svg"
+                title="Link to Linkedin Profile"
+                class="footer__social-image"
+                alt="Linkedin"
+              />
+            </a>
+          </li>
+        </ul>
         <p>&copy; 2023 - Creado por Mikelzon Sarabia</p>
+        <div class="footer__github-buttons">
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=miklzn&repo=myPortfolio&type=watch&count=true"
+            frameborder="0"
+            scrolling="0"
+            width="170"
+            height="20"
+            title="Watch Portfolio Template on GitHub"
+          >
+          </iframe>
+        </div>
       </div>
     </footer>
+
     <a href="#top" class="back-to-top" title="Back to Top">
       <img
         src="./images/arrow-up.svg"
         alt="Back to Top"
-        class="back-to-top_image"
+        class="back-to-top__image"
       />
     </a>
     <script src="./main.js"></script>
