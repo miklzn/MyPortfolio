@@ -423,6 +423,10 @@ body:not(.user-is-tabbing) a:focus {
   .header__text p {
     transform: scale(0.8);
   }
+
+  .header_center {
+    margin: 14px;
+  }
 }
 
 /* -------------Work------------- */
@@ -496,12 +500,16 @@ body:not(.user-is-tabbing) a:focus {
 .client__logos {
   display: flex;
   justify-content: space-between;
-  filter: invert(100%) grayscale(100%) opacity(0.8);
+  /* filter: invert(100%) grayscale(100%) opacity(0.8); */
 }
 
 .client__logo {
   height: 6.5rem;
   max-width: 18rem;
+}
+
+.client_logo {
+  filter: invert(100%) grayscale(100%) opacity(0.8);
 }
 
 @media (max-width: 1240px) {
@@ -535,8 +543,10 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media (min-width: 901px) {
+  /* Para colocar foto flex debe ser 0 0 35% */
+
   .about__text {
-    flex: 0 0 35%;
+    flex: 0 0 60%;
   }
 
   .about__photo-container {
@@ -545,9 +555,9 @@ body:not(.user-is-tabbing) a:focus {
   }
 }
 
-.about__photo {
+/* .about__photo {
   border-radius: 50%;
-}
+} */
 /* -------------Contact------------- */
 
 .contact__info {
